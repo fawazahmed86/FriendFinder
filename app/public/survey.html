@@ -4,148 +4,255 @@
   <meta charset="UTF-8">
   <title>FriendFinderSurvey</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+ -->
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 </head>
 
 <body>
   <div class="container">
-    <h2>Survey Questionnaire about you</h2>
-    <h3>About You</h3>
+    <h2>Survey Questionnaire</h2>
+    <br><br>
     <form>
-      <div class="form-group">
-        <label for="name">Name (Required)</label>
-        <input type="yourName" class="form-control" id="name" aria-describedby="nameHelp" placeholder="First Name">
+
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><strong>About You</strong></h3>
+        </div>
+        <div class = "panel-body">
+         <div class="input-group">
+            <span class="input-group-addon" id="btnGroupAddon">Name</span>
+            <input type="text" class="form-control validate" id="name" placeholder="Enter your name">
+          </div> 
+          <br>
+          <div class="input-group">
+            <span class="input-group-addon" id="btnGroupAddon">Photo Link</span>
+            <input type="text" class="form-control validate" id="photo" placeholder="Enter url for your photo">
+          </div>
+        </div>
       </div>
 
-      <div class="form-group">
-        <h3>Question 1 </h3>
-        <label for="question1">Your mind is always buzzing with unexplored ideas and plans.</label>
-        <select class="form-control" id="answer1">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
+      <br>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><strong>Question 1 </strong></h3>
+        </div>
+        <div class="panel-body">
+          <label>Your mind is always buzzing with unexplored ideas and plans.</label>
+            <div class="btn-toolbar">
+              <div class="btn-group" id="q1" data toggle="dropdown">
+                <button class="btn btn-info" value="1">1</button>
+                <button class="btn btn-info" value="2">2</button>
+                <button class="btn btn-info" value="3">3</button>
+                <button class="btn btn-info" value="4">4</button>
+                <button class="btn btn-info" value="5">5</button>
+              </div>
+            </div>
+      </div>
+    </div>
+
+      <br>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><strong>Question 2 </strong></h3>
+        </div>
+        <div class="panel-body">
+          <label for="question2">Generally speaking, you rely more on your experience than your imagination.</label>
+            <div class="btn-toolbar">
+              <div class="btn-group" id="q2" data toggle="dropdown">
+                <button class="btn btn-info" value="1">1</button>
+                <button class="btn btn-info" value="2">2</button>
+                <button class="btn btn-info" value="3">3</button>
+                <button class="btn btn-info" value="4">4</button>
+                <button class="btn btn-info" value="5">5</button>
+              </div>
+            </div>
+          </div>
       </div>
 
-      <div class="form-group">
-        <h3>Question 2 </h3>
-        <label for="question2">Generally speaking, you rely more on your experience than your imagination.</label>
-        <select class="form-control" id="answer2">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
+      <br>
+
+ 
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><strong>Question 3</strong> </h3>
+        </div>
+        <div class="panel-body">
+          <label for="question3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+            <div class="btn-toolbar">
+              <div class="btn-group" id="q3" data toggle="dropdown">
+                <button class="btn btn-info" value="1">1</button>
+                <button class="btn btn-info" value="2">2</button>
+                <button class="btn btn-info" value="3">3</button>
+                <button class="btn btn-info" value="4">4</button>
+                <button class="btn btn-info" value="5">5</button>
+              </div>
+            </div>
+          </div>
       </div>
 
-      <div class="form-group">
-        <h3>Question 3 </h3>
-        <label for="question3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
-        <select class="form-control" id="answer3">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
+      <br>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><strong>Question 4</strong> </h3>
+        </div>
+        <div class="panel-body">
+          <label for="question4">You rarely do something just out of sheer curiosity.</label>
+            <div class="btn-toolbar">
+              <div class="btn-group" id="q4">
+                <button class="btn btn-info" value="1">1</button>
+                <button class="btn btn-info" value="2">2</button>
+                <button class="btn btn-info" value="3">3</button>
+                <button class="btn btn-info" value="4">4</button>
+                <button class="btn btn-info" value="5">5</button>
+              </div>
+            </div>
+          </div>
       </div>
 
-      <div class="form-group">
-        <h3>Question 4 </h3>
-        <label for="question4">You rarely do something just out of sheer curiosity.</label>
-        <select class="form-control" id="answer4">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
+      <br>
+      
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><strong>Question 5</strong> </h3>
+        </div>
+        <div class="panel-body">
+          <label for="question5">People can rarely upset you.</label>
+            <div class="btn-toolbar">
+              <div class="btn-group" id="q5">
+                <button class="btn btn-info" value="1">1</button>
+                <button class="btn btn-info" value="2">2</button>
+                <button class="btn btn-info" value="3">3</button>
+                <button class="btn btn-info" value="4">4</button>
+                <button class="btn btn-info" value="5">5</button>
+              </div>
+            </div>
+          </div>
       </div>
 
-      <div class="form-group">
-        <h3>Question 5 </h3>
-        <label for="question5">People can rarely upset you.</label>
-        <select class="form-control" id="answer5">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
+      <br>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><strong>Question 6</strong> </h3>
+        </div>
+        <div class="panel-body">
+          <label for="question6">It is often difficult for you to relate to other people's feelings.</label>
+            <div class="btn-toolbar">
+              <div class="btn-group" id="q6">
+                <button class="btn btn-info" value="1">1</button>
+                <button class="btn btn-info" value="2">2</button>
+                <button class="btn btn-info" value="3">3</button>
+                <button class="btn btn-info" value="4">4</button>
+                <button class="btn btn-info" value="5">5</button>
+              </div>
+            </div>
+          </div>
       </div>
 
-      <div class="form-group">
-        <h3>Question 6 </h3>
-        <label for="question6">It is often difficult for you to relate to other people's feelings.</label>
-        <select class="form-control" id="answer6">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
+      <br>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><strong>Question 7</strong></h3>
+        </div>
+        <div class="panel-body">
+          <label for="question7">In a discussion, truth should be more important than people's sensitivities.</label>
+            <div class="btn-toolbar">
+              <div class="btn-group" id="q7">
+                <button class="btn btn-info" value="1">1</button>
+                <button class="btn btn-info" value="2">2</button>
+                <button class="btn btn-info" value="3">3</button>
+                <button class="btn btn-info" value="4">4</button>
+                <button class="btn btn-info" value="5">5</button>
+              </div>
+            </div>
+          </div>
       </div>
 
-      <div class="form-group">
-        <h3>Question 7 </h3>
-        <label for="question7">In a discussion, truth should be more important than people's sensitivities.</label>
-        <select class="form-control" id="answer7">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
+      <br>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><strong>Question 8</strong></h3>
+        </div>
+        <div class="panel-body">
+          <label for="question8">You rarely get carried away by fantasies and ideas.</label>
+            <div class="btn-toolbar">
+              <div class="btn-group" id="q8">
+                <button class="btn btn-info" value="1">1</button>
+                <button class="btn btn-info" value="2">2</button>
+                <button class="btn btn-info" value="3">3</button>
+                <button class="btn btn-info" value="4">4</button>
+                <button class="btn btn-info" value="5">5</button>
+              </div>
+            </div>
+          </div>
       </div>
 
-      <div class="form-group">
-        <h3>Question 8 </h3>
-        <label for="question8">You rarely get carried away by fantasies and ideas.</label>
-        <select class="form-control" id="answer8">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
+      <br>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><strong>Question 9</strong></h3>
+        </div>
+        <div class="panel-body">
+          <label for="question9">You think that everyone's views should be respected regardless of whether they are supported by facts or not.</label>
+            <div class="btn-toolbar">
+              <div class="btn-group" id="q9">
+                <button class="btn btn-info" value="1">1</button>
+                <button class="btn btn-info" value="2">2</button>
+                <button class="btn btn-info" value="3">3</button>
+                <button class="btn btn-info" value="4">4</button>
+                <button class="btn btn-info" value="5">5</button>
+              </div>
+            </div>
+          </div>
       </div>
 
-      <div class="form-group">
-        <h3>Question 9 </h3>
-        <label for="question9">You think that everyone's views should be respected regardless of whether they are supported by facts or not.</label>
-        <select class="form-control" id="answer9">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
+      <br>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><strong>Question 10</strong></h3>
+        </div>
+        <div class="panel-body">
+          <label for="question10">You feel more energetic after spending time with a group of people.</label>
+            <div class="btn-toolbar">
+              <div class="btn-group" id="q10">
+                <button class="btn btn-info" value="1">1</button>
+                <button class="btn btn-info" value="2">2</button>
+                <button class="btn btn-info" value="3">3</button>
+                <button class="btn btn-info" value="4">4</button>
+                <button class="btn btn-info" value="5">5</button>
+              </div>
+            </div>
+          </div>
       </div>
 
-      <div class="form-group">
-        <h3>Question 10 </h3>
-        <label for="question10">You feel more energetic after spending time with a group of people.</label>
-        <select class="form-control" id="answer10">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
-        </select>
-      </div>
-    
-      <button type="submit" class="btn btn-primary" id="userSubmitAnswers" data-toggle="modal">Submit</button>
+
+      <button type="submit" class="btn btn-primary" id="Submitbutton" data-toggle="modal">Submit</button>
+      <br><br><br><br>
     </form>
   </div>  
 
-  <div class="modal fade bd-example" id="modalBFF" tabindex="-1" role="dialog">
+
+  <div class="modal fade bd-example" id="modalBFF" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
+      <h4 class="text-center">Closest Friend Match</h4>
+      <div class="divider"></div>
+      <h5 id="userMatch"></h5>
+      <img id="userMatchImage" class="materialboxed" width="200px" height="200px" src="">
+
       <div class="modal-header">
         <h3 class="modal-title" id="newBFF">Your Compatible Friend!</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -154,6 +261,7 @@
       </div>
       <div class="modal-body">
         <h4 class="matchName" id="friendMatch"></h4>
+        <img id="friendImage" class="materialboxed" width="150px" height="150px" src="">
       </div>
       <div class="modal-footer">
         <a href="/" class="btn btn-info">Goodbye Friend</a>
@@ -163,39 +271,75 @@
 </div>
 
 <script src="https://code.jquery.com/jquery.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
 <script type="text/javascript">
-  
-  $("#userSubmitAnswers").on("click", function(event){
-      event.preventDefault();
-      var surveyInput = {
-        name: $("#name").val().trim(),
-        scores: [
-            $("#answer1").val().trim(),
-            $("#answer2").val().trim(),
-            $("#answer3").val().trim(),
-            $("#answer4").val().trim(),
-            $("#answer5").val().trim(),
-            $("#answer6").val().trim(),
-            $("#answer7").val().trim(),
-            $("#answer8").val().trim(),
-            $("#answer9").val().trim(),
-            $("#answer10").val().trim()
-            ]
-      };
-      console.log(surveyInput)
-      $.post("/api/friends", surveyInput, function(data){
-        console.log(data)
-        
-        $("#friendMatch").html(data.friendMatch)
 
-        $("#modalBFF").modal('show')
+    $(document).ready(function(){
+      $('.btn-toolbar .btn').click(function(){
+        event.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
+      
       })
-  });
+
+      $("#Submitbutton").on("click", function(event){
+        event.preventDefault();
+        
+        var userInput = {
+          name: $("#name").val().trim(),
+          photo: $("#photo").val().trim(),
+          // values: []    
+          scores: [
+                    $("#q1").find("button.active").prop('value'),
+                    $("#q2").find("button.active").prop('value'),
+                    $("#q3").find("button.active").prop('value'),
+                    $("#q4").find("button.active").prop('value'),
+                    $("#q5").find("button.active").prop('value'),
+                    $("#q6").find("button.active").prop('value'),
+                    $("#q7").find("button.active").prop('value'),
+                    $("#q8").find("button.active").prop('value'),
+                    $("#q9").find("button.active").prop('value'),
+                    $("#q10").find("button.active").prop('value')]
+
+        }
+        console.log(userInput);
+
+      
+
+      if ((userInput.scores.length = 10)) {
+       for (var i = 0; i < 10; i++) {
+        if (userInput.scores[i] === undefined) {
+          alert("complete all required fields in the survey")
+          return false 
+        }
+       }
+        console.log("checking complete for execution of modal");
+
+          // typeof userInput.scores[i] === "number"
+          $.post('/api/friends', userInput)
+                // console.log(data);
+                .done(function(data) {
+            console.log('response = ' + JSON.stringify(data));
+            // console.log()
+            $('#friendMatch').html(data.friendMatch);
+            $("#friendImage").attr("src", data.friendImage);
+            $('#modalBFF').modal('show');
+            });
+            console.log("this is name length", userInput.name.length);
+      } 
+       else {
+          alert("Kindly complete all required inputs");
+        };
+
+      });
+
+      })
+
+  
 </script>
 
 </body>
