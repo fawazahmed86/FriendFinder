@@ -1,19 +1,25 @@
-var path = require("path");
+// var path = require("path");
+//friendsList changed to friendsInfo
 
 var friendsList = require("../data/friends.js")
 
 module.exports = function(app){
   
   app.get("/api/friends", function(req, res){
-    res.json(friendsList)
+    res.json(friendsInfo)
   });
   
   app.post("/api/friends", function(req, res){
-    var surveyInput = req.body;
+    // var myData = req.body;
+    console.log(req.body);
+    console.log(friendsList);
+    var myData = req.body;
 
-    var surveyResult = surveyInput.scores;
+
+    var surveyResult = myData.scores;
 
     var friendMatch = "";
+    var friendImage = "";
     var friendDifference = 50;
     var totalDifference = 0;
   
@@ -27,11 +33,12 @@ module.exports = function(app){
       if(totalDifference < friendDifference){
         friendDifference = totalDifference;
         friendMatch = friendsList[i].name;
+        friendImage = friendsList[i].photo;
       }
     }
   
-    friendsList.push(surveyInput)
+    friendsList.push(myData)
   
-    res.json({status: "Okay", friendMatch: friendMatch});
+    res.json({status: "Okay", friendMatch: friendMatch, friendImage: friendImage});
   });
 }
