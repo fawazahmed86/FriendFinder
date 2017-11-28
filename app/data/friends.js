@@ -1,25 +1,25 @@
 
 var friendsList = [
   {
-    name: "Courage the Cowardly Dog",
-    scores: [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    photo: "https://stickershop.line-scdn.net//stickershop/v1/product/1388/iphone/main@2x.png"
+    name: "Tom Cruise",
+    scores: [ 5, 3, 2, 1, 2, 3, 1, 2, 3, 3],
+    photo: "https://i.pinimg.com/736x/fe/71/be/fe71beb8d7db1e0969cc801a803702b8--friends-series-friends-tv-show.jpg"
   }, {
     name: "Spongebob Squarepants",
     scores: [ 4, 3, 5, 3, 4, 2, 2, 2, 5, 4],
-    photo: "https://vignette.wikia.nocookie.net/fantendo/images/2/27/Spongebob1.gif/revision/latest/scale-to-width-down/200?cb=20120220040308"
+    photo: "https://i.pinimg.com/736x/fe/71/be/fe71beb8d7db1e0969cc801a803702b8--friends-series-friends-tv-show.jpg"
   }, {
-    name: "Tom from Tom & Jerry",
-    scores: [ 5, 3, 2, 1, 2, 3, 1, 2, 3, 3],
-    photo: "http://pluspng.com/photo-png/tom-and-jerry-png-tom-and-jerry-picture-png-image-200.png"
+    name: "Ronaldinho",
+    scores: [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    photo: "https://i.pinimg.com/736x/fe/71/be/fe71beb8d7db1e0969cc801a803702b8--friends-series-friends-tv-show.jpg"
   }, {
-    name: "Dennis the menace",
+    name: "Mickey Mouse",
     scores: [ 5, 1, 5, 1, 5, 2, 1, 1, 5, 5],
-    photo: "https://vignette.wikia.nocookie.net/parody/images/e/ef/Dennis_the_menace-logo-4b3df4c3ff-seeklogo-com.gif/revision/latest?cb=20170219005026"
+    photo: "https://i.pinimg.com/736x/fe/71/be/fe71beb8d7db1e0969cc801a803702b8--friends-series-friends-tv-show.jpg"
   }, {
     name: "Donald Duck",
     scores: [ 5, 3, 5, 3, 3, 1, 5, 5, 5, 2],
-    photo: "https://i.pinphoto.com/236x/d7/41/73/d741730c2e47db2e541df05a5b2157ff--donald-duck-entertainment.jpg"
+    photo: "https://i.pinimg.com/736x/fe/71/be/fe71beb8d7db1e0969cc801a803702b8--friends-series-friends-tv-show.jpg"
   }
 ];
 

@@ -251,7 +251,7 @@
       <h4 class="text-center">Closest Friend Match</h4>
       <div class="divider"></div>
       <h5 id="userMatch"></h5>
-      <img id="userMatchImage" class="materialboxed" width="200px" height="200px" src="">
+      
 
       <div class="modal-header">
         <h3 class="modal-title" id="newBFF">Your Compatible Friend!</h3>
@@ -325,7 +325,6 @@
                 .done(function(data) {
             console.log('response = ' + JSON.stringify(data));
             // console.log()
-            // Set the name and image values of friend match
             $('#friendMatch').html(data.friendMatch);
             $("#friendImage").attr("src", data.friendImage);
             $('#modalBFF').modal('show');
